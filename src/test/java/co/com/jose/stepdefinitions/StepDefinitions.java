@@ -2,6 +2,7 @@ package co.com.jose.stepdefinitions;
 
 import co.com.prueba.model.UtestInformation;
 import co.com.prueba.tasks.LlenarInfoPersonal;
+import co.com.prueba.tasks.LlenarUbication;
 import co.com.prueba.tasks.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -27,7 +28,7 @@ public class StepDefinitions {
 
     @When("^Completara el formulario completo con sus datos$")
     public void completaraElFormularioCompletoConSusDatos(List<UtestInformation> info) throws Exception{
-        OnStage.theActorInTheSpotlight().attemptsTo(LlenarInfoPersonal.thePage(info));
+        OnStage.theActorInTheSpotlight().attemptsTo(LlenarInfoPersonal.thePage(info), LlenarUbication.thePage(info));
 
     }
 

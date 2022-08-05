@@ -7,6 +7,9 @@ public class UtestInformation {
     private String strBirthMonth;
     private String strBirthDay;
     private String strBirthYear;
+    private String strCity;
+    private String strCodePostal;
+    private String strCountry;
 
     public String getStrFirstName() {
         return strFirstName;
@@ -54,5 +57,29 @@ public class UtestInformation {
 
     public void setStrBirthYear(String strBirthYear) {
         this.strBirthYear = strBirthYear;
+    }
+
+    public String getStrCity() {
+        return strCity;
+    }
+
+    public void setStrCity(String strCity) {
+        this.strCity = strCity;
+    }
+
+    public String getStrCodePostal() {
+        return strCodePostal;
+    }
+
+    public void setStrCodePostal(String strCodePostal) {
+        this.strCodePostal = strCodePostal;
+    }
+
+    public String getStrCountry() {
+        return strCountry;
+    }
+
+    public void setStrCountry(String strCountry) {
+        this.strCountry = strCountry;
     }
 }
