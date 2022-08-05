@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b556ff-c96d-4090-b993-941d573e7a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/prueba/tasks/LlenarUbication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/prueba/userinterface/PageUbication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/prueba/tasks/LLenarDevices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/prueba/userinterface/PageDevices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />

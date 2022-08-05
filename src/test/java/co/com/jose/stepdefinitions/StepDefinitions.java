@@ -1,6 +1,7 @@
 package co.com.jose.stepdefinitions;
 
 import co.com.prueba.model.UtestInformation;
+import co.com.prueba.tasks.LLenarDevices;
 import co.com.prueba.tasks.LlenarInfoPersonal;
 import co.com.prueba.tasks.LlenarUbication;
 import co.com.prueba.tasks.OpenUp;
@@ -28,7 +29,8 @@ public class StepDefinitions {
 
     @When("^Completara el formulario completo con sus datos$")
     public void completaraElFormularioCompletoConSusDatos(List<UtestInformation> info) throws Exception{
-        OnStage.theActorInTheSpotlight().attemptsTo(LlenarInfoPersonal.thePage(info), LlenarUbication.thePage(info));
+        OnStage.theActorInTheSpotlight().attemptsTo(LlenarInfoPersonal.thePage(info), LlenarUbication.thePage(info),
+                LLenarDevices.thePage(info));
 
     }
 
