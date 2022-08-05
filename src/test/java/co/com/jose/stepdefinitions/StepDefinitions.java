@@ -1,14 +1,13 @@
 package co.com.jose.stepdefinitions;
 
 import co.com.prueba.model.UtestInformation;
-import co.com.prueba.tasks.LLenarDevices;
-import co.com.prueba.tasks.LlenarInfoPersonal;
-import co.com.prueba.tasks.LlenarUbication;
-import co.com.prueba.tasks.OpenUp;
+import co.com.prueba.questions.Responder;
+import co.com.prueba.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -30,12 +29,12 @@ public class StepDefinitions {
     @When("^Completara el formulario completo con sus datos$")
     public void completaraElFormularioCompletoConSusDatos(List<UtestInformation> info) throws Exception{
         OnStage.theActorInTheSpotlight().attemptsTo(LlenarInfoPersonal.thePage(info), LlenarUbication.thePage(info),
-                LLenarDevices.thePage(info));
+                LLenarDevices.thePage(info), LlenarFinish.thePage(info));
 
     }
 
     @Then("^Finaliza el registro al completar los formularios$")
-    public void finalizaElRegistroAlCompletarLosFormularios() throws Exception{
-
+    public void finalizaElRegistroAlCompletarLosFormularios(List<UtestInformation> info) throws Exception{
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Responder.toThe(info)));
     }
 }

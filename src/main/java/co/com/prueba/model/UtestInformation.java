@@ -16,6 +16,8 @@ public class UtestInformation {
     private String strMobileDevice;
     private String strMobileModel;
     private String strSystem;
+    private String strPassword;
+    private String strTextFinish;
 
     public String getStrFirstName() {
         return strFirstName;
@@ -135,5 +137,21 @@ public class UtestInformation {
 
     public void setStrSystem(String strSystem) {
         this.strSystem = strSystem;
+    }
+
+    public String getStrPassword() {
+        return strPassword;
+    }
+
+    public void setStrPassword(String strPassword) {
+        this.strPassword = strPassword;
+    }
+
+    public String getStrTextFinish() {
+        return strTextFinish;
+    }
+
+    public void setStrTextFinish(String strTextFinish) {
+        this.strTextFinish = strTextFinish;
     }
 }
